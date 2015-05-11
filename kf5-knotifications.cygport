@@ -1,0 +1,26 @@
+inherit kf5
+
+NAME="kf5-knotifications"
+VERSION=5.9.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 desktop notifications library"
+DESCRIPTION="KNotification is used to notify the user of an event. It covers
+feedback and persistent events."
+
+PKG_NAMES="libKF5Notifications5 libKF5Notifications-devel"
+libKF5Notifications5_CONTENTS="
+	usr/bin/cygKF5Notifications-5.dll
+	usr/share/doc/
+	usr/share/kservicetypes5/
+	usr/share/locale/
+"
+libKF5Notifications_devel_REQUIRES="libdbusmenu-qt5-devel libKF5Codecs-devel libKF5Config-devel libKF5CoreAddons-devel libKF5IconThemes-devel libKF5Service-devel libKF5WindowSystem-devel libphonon4qt5-devel libQt5Core-devel libQt5Gui-devel libQt5X11Extras-devel"
+libKF5Notifications_devel_CONTENTS="
+	usr/include/KF5/KNotifications/
+	usr/include/KF5/knotifications_version.h
+	usr/lib/cmake/KF5Notifications/
+	${QT5_MKSPECSDIR#/}/modules/qt_KNotifications.pri
+	usr/lib/libKF5Notifications.dll.a
+	usr/share/dbus-1/interfaces/
+"
