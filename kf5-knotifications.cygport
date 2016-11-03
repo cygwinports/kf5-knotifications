@@ -1,18 +1,12 @@
 inherit kf5
 
 NAME="kf5-knotifications"
-VERSION=5.12.0
-RELEASE=2
+VERSION=5.27.0
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 desktop notifications library"
 DESCRIPTION="KNotification is used to notify the user of an event. It covers
 feedback and persistent events."
-
-PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/kf5-knotifications.git/plain/0002-Remove-pretty-much-useless-warning-message.patch
-	http://pkgs.fedoraproject.org/cgit/kf5-knotifications.git/plain/0003-catch-unknown-notification-entries-nullptr-deref.patch
-	http://pkgs.fedoraproject.org/cgit/kf5-knotifications.git/plain/0004-Remove-KService-and-KIconThemes-usage-from-KNotifica.patch
-"
 
 PKG_NAMES="libKF5Notifications5 libKF5Notifications-devel"
 libKF5Notifications5_CONTENTS="
